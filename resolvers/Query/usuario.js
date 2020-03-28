@@ -20,7 +20,7 @@ module.exports = {
 
         return getUsuarioLogado(usuario)
     },
-    usuarios(obj, args, context) {
+    usuarios(obj, args, ctx) {
         ctx && ctx.validarAdmin()
 
         return db('usuarios')
